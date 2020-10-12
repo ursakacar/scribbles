@@ -3,14 +3,21 @@
 ## Whitelisting
 
 ### Domain
+
 `@@|http://example.com/|$document`
+
 `@@|http://www.example.com/|$document`
+
 `@@||adblockplus.org^$document`
+
 `@@||testpages.adblockplus.org^$document`
 
 ### Page
+
 `@@|https://adblockplus.org/forum/|$document`
+
 `@@|https://testpages.adblockplus.org/en/exceptions/document|$document`
+
 `@@||youtube.com/watch?v=M7oiy9MCbeM|$document`
 
 ## Errors
