@@ -1,15 +1,4 @@
----
-title: Installing builds
-description: 'Tips and tricks related to build installation'
----
-
-## UI nightly builds
-
-https://wspee.gitlab.io/adblockplusui-nightlies/
-
-`release-2019-2.1 (494ad677)` signifies the build for commit `494ad677` in `release-2019-2.1`
-
-## Installing builds
+# Installing builds
 
 ### Chrome and Opera
 
@@ -63,3 +52,9 @@ In Firefox, unsigned development builds can only be loaded as temporary extensio
 ```
 * Zip the extension
 * Go to `about:addons` and load the .zip file of the extension
+
+## UI nightly builds
+
+https://wspee.gitlab.io/adblockplusui-nightlies/
+
+`release-2019-2.1 (494ad677)` signifies the build for commit `494ad677` in `release-2019-2.1`

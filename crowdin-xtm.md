@@ -1,7 +1,4 @@
----
-title: Crowdin and XTM
-description: 'instructions for testing Crowdin and XTM'
----
+# Crowdin and XTM
 
 See: https://gitlab.com/eyeo/adblockplus/abpui/adblockplusui/-/wikis/utilities
 

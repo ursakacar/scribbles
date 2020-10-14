@@ -1,7 +1,4 @@
----
-title: Testing translations
-description: 'checking translations in test environment before release'
----
+# Translation testing
 
 ## What's the deal
 

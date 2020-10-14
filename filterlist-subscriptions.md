@@ -1,9 +1,8 @@
----
-title: Filterlist Subscriptions
-description: 'links for testing filterlist subscriptions'
----
+# Filterlist Subscriptions
 
-## abp:subscribe links
+## (obsolete) abp:subscribe links
+
+Limited the list of websites that can use `abp:subscribe` links, see https://gitlab.com/eyeo/adblockplus/adblockpluschrome/-/issues/263
 
 ### Supported
 
