@@ -81,3 +81,46 @@ const EXPIRATION_INTERVAL = 5 * MILLIS_IN_SECOND;
 * Change the content(by simply copy pasting) of the **notification.json** file, to trigger different notifications
 * The extension will only show a notification with unique **id**, that hasn't been shown before, so make sure the **id** on each **notification.json** save is unique
 * Notification requests can be observed from the terminal running the http server
+
+
+## Bubble UI notifications
+
+Inspect the popup, paste code in console:
+
+```
+dispatchEvent(new CustomEvent("extension:notification", {
+  detail: {
+    type: "information", // or "critical" or "normal" or whatever it is you want
+    texts: {
+      title: "Title for a notification",
+      message: "There is something to read here"
+    }
+  }
+}));
+```
+
+**Some more examples I use often:**
+```
+dispatchEvent(new CustomEvent("extension:notification", {
+  detail: {
+    type: "normal",
+    links: ["contribute", "abp:day1"],
+    texts: {
+      title: "Title for a notification",
+      message: "Message for <a>Link1</a> notification <a>day1</a>",
+    }
+  }
+}));
+```
+
+```
+dispatchEvent(new CustomEvent("extension:notification", {
+  detail: {
+    type: "information",
+    texts: {
+      title: "Title for a long long long very long and not very useful and so on notification",
+      message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in tellus et consequat. Praesent scelerisque55 congue felis at faucibus. Vestibulum sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in tellus et consequat. Praesent scelerisque congue felis at faucibus. Vestibulum sit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in tellus et consequat. Praesent scelerisque congue felis at faucibus. Vestibulum sit"
+    }
+  }
+}));
+```
