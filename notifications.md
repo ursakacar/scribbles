@@ -5,6 +5,7 @@
 1. Serve the content of the folder where you have notification files by running: `python -m SimpleHTTPServer 8080` or `python3 -m http.server 8080`
 1. Use http://localhost.run/ to share localhost (run `ssh -R 80:localhost:8080 ssh.localhost.run`)
 1. Copy the https url from the previous command (it will be something like https://ursa-6d4aba57.localhost.run)
+1. **note!** it has to be served over HTTPS!
 
 ## Way 1 (no code changes)
 
