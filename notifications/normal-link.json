@@ -2,7 +2,7 @@
   "notifications": [
     {
       "id": "normal_link",
-      "severity": "normal",
+      "type": "normal",
       "links": [
         "contribute",
         "subscriptions"

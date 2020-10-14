@@ -2,7 +2,7 @@
   "notifications": [
     {
       "id": "relentless_link",
-      "severity": "relentless",
+      "type": "relentless",
       "links": [
         "contribute"
       ],

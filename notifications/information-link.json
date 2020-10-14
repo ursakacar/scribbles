@@ -2,7 +2,7 @@
   "notifications": [
     {
       "id": "information_link",
-      "severity": "information",
+      "type": "information",
       "links": [
         "faq",
         "contribute"

@@ -2,7 +2,7 @@
   "notifications": [
     {
       "id": "question_basic3333",
-      "severity": "information",
+      "type": "information",
       "title": {
         "en-US": "Test information Notification",
         "de": "DE Test QUESTION Notification"

@@ -2,7 +2,7 @@
   "notifications": [
     {
       "id": "critical_link",
-      "severity": "critical",
+      "type": "critical",
       "links": [
         "contribute"
       ],
