@@ -1,0 +1,38 @@
+{
+  "notifications": [
+    {
+      "id": "6",
+      "links": [
+        "adblock_plus_release_blog_3.8"
+      ],
+      "message": {
+        "en-US": "No action is required—continue browsing the web without annoying ads! <a>See what's new</a>"
+      },
+      "severity": "information",
+      "targets": [
+        {
+          "extension": "adblockpluschrome",
+          "extensionMaxVersion": "3.8",
+          "extensionMinVersion": "3.8",
+          "locales": [
+            "en-US",
+            "en-GB"
+          ]
+        },
+        {
+          "extension": "adblockplusfirefox",
+          "extensionMaxVersion": "3.8",
+          "extensionMinVersion": "3.8",
+          "locales": [
+            "en-US",
+            "en-GB"
+          ]
+        }
+      ],
+      "title": {
+        "en-US": "Adblock Plus is up-to-date"
+      }
+    }
+  ],
+  "version": "202002250000"
+}

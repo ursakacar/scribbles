@@ -1,0 +1,21 @@
+{
+  "notifications": [
+    {
+      "id": "information_link",
+      "severity": "information",
+      "links": [
+        "faq",
+        "contribute"
+      ],
+      "title": {
+        "en-US": "INFORMATION Notification",
+        "de": "DE LOCALE INFORMATION Notification"
+      },
+      "message": {
+        "en-US": "This is a INFORMATION notification with a <a>faq</a> and <a>contribute</a> link.",
+        "de": "DE LOCALE This is a INFORMATION notification with a <a>faq</a> and <a>contribute</a> link."
+      }
+    }
+  ],
+  "version": "201810011538"
+}

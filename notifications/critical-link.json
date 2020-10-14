@@ -1,0 +1,20 @@
+{
+  "notifications": [
+    {
+      "id": "critical_link",
+      "severity": "critical",
+      "links": [
+        "contribute"
+      ],
+      "title": {
+        "en-US": "CRITICAL Notification",
+        "de": "DE LOCALE CRITICAL Notification"
+      },
+      "message": {
+        "en-US": "This is a CRITICAL notificatio with a <a>contribute</a> link.",
+        "de": "DE LOCALE This is a CRITICAL notification with a <a>contribute</a> link."
+      }
+    }
+  ],
+  "version": "201810011538"
+}

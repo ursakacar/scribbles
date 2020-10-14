@@ -1,0 +1,19 @@
+{
+  "notifications": [
+    {
+      "id": "7",
+      "inactive": false,
+      "links": [
+        "https://new.adblockplus.org/update"
+      ],
+      "message": {
+        "en-US": "AdblockplusDonate202004"
+      },
+      "severity": "newtab",
+      "title": {
+        "en-US": "AdblockplusDonate202004"
+      }
+    }
+  ],
+  "version": "202004141019-7/2"
+}

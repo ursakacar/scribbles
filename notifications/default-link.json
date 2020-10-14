@@ -1,0 +1,19 @@
+{
+  "notifications": [
+    {
+      "id": "defaulfdt_link",
+      "links": [
+        "contribute"
+      ],
+      "title": {
+        "en-US": "DEFAULT Notification",
+        "de": "DE LOCALE DEFAULT Notification"
+      },
+      "message": {
+        "en-US": "This is a <a>Link</a> DEFAULT notification with a <a>contribute</a> link..",
+        "de": "DE LOCALE This is a DEFAULT notification with a <a>contribute</a> link."
+      }
+    }
+  ],
+  "version": "201810011538"
+}

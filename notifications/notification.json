@@ -1,0 +1,17 @@
+{
+  "notifications": [
+    {
+      "id": "question_basic3333",
+      "severity": "information",
+      "title": {
+        "en-US": "Test information Notification",
+        "de": "DE Test QUESTION Notification"
+      },
+      "message": {
+        "en-US": "This is a information notification.",
+        "de": "DE This is a QUESTION notification."
+      }
+    }
+  ],
+  "version": "201810011538"
+}

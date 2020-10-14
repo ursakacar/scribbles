@@ -1,0 +1,20 @@
+{
+  "notifications": [
+    {
+      "id": "relentless_link",
+      "severity": "relentless",
+      "links": [
+        "contribute"
+      ],
+      "title": {
+        "en-US": "RELENTLESS Notification",
+        "de": "DE RELENTLESS Notification"
+      },
+      "message": {
+        "en-US": "This is a RELENTLESS notification with a <a>contribute</a> link.",
+        "de": "DE LOCALE This is a RELENTLESS notification with a <a>contribute</a> link."
+      }
+    }
+  ],
+  "version": "201810011538"
+}
