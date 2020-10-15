@@ -1,0 +1,21 @@
+{
+  "notifications": [
+    {
+      "id": "1",
+      "type": "information",
+      "links": [
+        "faq",
+        "contribute"
+      ],
+      "title": {
+        "en-US": "Test Notification",
+        "de": "DE LOCALE Test Notification"
+      },
+      "message": {
+        "en-US": "This is a Test notification with a <a>faq</a> and <a>contribute</a> link.",
+        "de": "DE LOCALE This is a Test notification with a <a>faq</a> and <a>contribute</a> link."
+      }
+    }
+  ],
+  "version": "201810011538"
+}

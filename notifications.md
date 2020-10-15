@@ -85,22 +85,12 @@ const EXPIRATION_INTERVAL = 5 * MILLIS_IN_SECOND;
 ## Copy paste for testing notifications
 
 ```
+// PLACEHOLDER
+defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/placeholder-notification.json";
 // DEFAULT
-defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/default-link.json";
-// NORMAL
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/normal-link.json";
-// INFORMATION
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/information-link.json";
+defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/default.json";
 // NEWTAB
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/newtab-donation.json";
-// CRITICAL
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/critical-link.json";
-// RELENTLESS
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/relentless-link.json";
-// EMPTY
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/empty-notification.json";
-// UPDATE
-// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/3-8-update.json";
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/newtab.json";
 ```
 
 ## Bubble UI notifications
