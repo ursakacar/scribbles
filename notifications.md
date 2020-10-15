@@ -82,6 +82,26 @@ const EXPIRATION_INTERVAL = 5 * MILLIS_IN_SECOND;
 * The extension will only show a notification with unique **id**, that hasn't been shown before, so make sure the **id** on each **notification.json** save is unique
 * Notification requests can be observed from the terminal running the http server
 
+## Copy paste for testing notifications
+
+```
+// DEFAULT
+defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/default-link.json";
+// NORMAL
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/normal-link.json";
+// INFORMATION
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/information-link.json";
+// NEWTAB
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/newtab-donation.json";
+// CRITICAL
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/critical-link.json";
+// RELENTLESS
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/relentless-link.json";
+// EMPTY
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/empty-notification.json";
+// UPDATE
+// defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/3-8-update.json";
+```
 
 ## Bubble UI notifications
 
