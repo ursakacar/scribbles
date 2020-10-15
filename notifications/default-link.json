@@ -10,7 +10,7 @@
         "de": "DE LOCALE DEFAULT Notification"
       },
       "message": {
-        "en-US": "This is a <a>Link</a> DEFAULT notification with a <a>contribute</a> link..",
+        "en-US": "This is a DEFAULT notification with a <a>contribute</a> link..",
         "de": "DE LOCALE This is a DEFAULT notification with a <a>contribute</a> link."
       }
     }

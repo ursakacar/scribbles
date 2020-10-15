@@ -12,8 +12,8 @@
         "de": "DE LOCALE NORMAL Notification"
       },
       "message": {
-        "en-US": "This is a NORMAL  <a>test</a> notification with a <a>contribute</a>  and <a>subscriptions</a> link.",
-        "de": "DE LOCALE This is a <a>test</a> NORMAL notification with a <a>contribute</a>  and <a>subscriptions</a> link."
+        "en-US": "This is a NORMAL notification with a <a>contribute</a>  and <a>subscriptions</a> link.",
+        "de": "DE LOCALE This is a NORMAL notification with a <a>contribute</a>  and <a>subscriptions</a> link."
       }
     }
   ],
