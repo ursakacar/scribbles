@@ -65,7 +65,7 @@ const analysisTemplateId = 251759;
 const projectManagerId = replace-with-translation-manager-id;
 const subjectMatterId = 1058;
 
-1. Now you're ready to run XTM xommands
+1. Now you're ready to run XTM commands (should be run from a non-master branch since they do comparisons to master)
 
 `USER_ID=replace-with-your-personal-id CLIENT=eyeo PASSWORD=replace-with-your-personal-password npm run $ xtm.create`
 * creates a new project in XTM, project name will be same as branch name
@@ -77,5 +77,7 @@ const subjectMatterId = 1058;
 `USER_ID=replace-with-your-personal-id CLIENT=eyeo PASSWORD=replace-with-your-personal-password npm run $ xtm.download`
 * downloads changes you've made in XTM project and update local files accordingly
 
+`USER_ID=replace-with-your-personal-id CLIENT=eyeo PASSWORD=replace-with-your-personal-password npm run $ xtm.details`
+* updates project manager and subject matter ID's
 
 

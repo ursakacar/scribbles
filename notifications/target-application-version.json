@@ -1,0 +1,28 @@
+{
+  "notifications": [
+    {
+      "id": "platformVersionTargeting",
+      "severity": "normal",
+      "links": [
+        "adblock_browser_promotion_0"
+      ],
+      "title": {
+        "en-US": "Test Information Notification",
+        "de": "DE Test Information Notification"
+      },
+      "message": {
+        "en-US": "This is a <a>test</a> information notification.",
+        "de": "DE This is a <a>test</a> information notification."
+      },
+      "targets": [
+        {
+          "applicationMaxVersion": "70"
+        }
+      ],
+    }
+  ],
+  "version": "201810011538"
+}
+
+
+`browser.runtime.sendMessage({type: "prefs.set", key: "notificationurl", value: "https://ursa-1d4ffb95.localhost.run/placeholder-notification.json"})

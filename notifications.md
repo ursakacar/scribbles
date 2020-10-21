@@ -88,7 +88,7 @@ const EXPIRATION_INTERVAL = 5 * MILLIS_IN_SECOND;
 // PLACEHOLDER
 defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/placeholder-notification.json";
 // DEFAULT
-defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/default.json";
+//defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/default.json";
 // NEWTAB
 // defaults.notificationurl = "https://ursa-1d4ffb95.localhost.run/newtab.json";
 ```

@@ -1,7 +1,7 @@
 {
   "notifications": [
     {
-      "id": "7",
+      "id": "3",
       "inactive": false,
       "links": [
         "https://new.adblockplus.org/update?an=%ADDON_NAME%&av=%ADDON_VERSION%&ap=%APPLICATION_NAME%&apv=%APPLICATION_VERSION%&p=%PLATFORM_NAME%&pv=%PLATFORM_VERSION%"

@@ -1,14 +1,14 @@
 {
   "notifications": [
     {
-      "id": "133d5pf5ggfddss89kods",
+      "id": "1",
       "type": "normal",
       "links": [
         "faq",
         "contribute"
       ],
       "title": {
-        "en-US": "Test old Notification",
+        "en-US": "Test Notification",
         "de": "DE LOCALE Test Notification"
       },
       "message": {
