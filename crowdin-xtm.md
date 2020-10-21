@@ -1,3 +1,5 @@
+All this should be done on non-master branch, don't forget to run `npm install` beforehand.
+
 # Crowdin and XTM
 
 See: https://gitlab.com/eyeo/adblockplus/abpui/adblockplusui/-/wikis/utilities
@@ -42,6 +44,16 @@ See: https://gitlab.com/eyeo/adblockplus/abpui/adblockplusui/-/wikis/utilities
 
 `npm run $ crowdin.download-translations`
 
+9. **crowdin CLI**
+
+`wget -qO - https://artifacts.crowdin.com/repo/GPG-KEY-crowdin | sudo apt-key add -`
+Using the following command, create the crowdin.list file in the /etc/apt/sources.list.d directory:
+
+`content_copyecho "deb https://artifacts.crowdin.com/repo/deb/ /" > /etc/apt/sources.list.d/crowdin.list`
+And your repository is ready for use. You can install the Crowdin CLI Debian package with:
+
+`content_copysudo apt-get update && sudo apt-get install crowdin3`
+
 # XTM
 
 XTM related tickets that might be helpful:
@@ -65,7 +77,7 @@ const analysisTemplateId = 251759;
 const projectManagerId = replace-with-translation-manager-id;
 const subjectMatterId = 1058;
 
-1. Now you're ready to run XTM commands (should be run from a non-master branch since they do comparisons to master)
+1. Now you're ready to run XTM commands. User ID and password are needed (user id can be found under: Users tab -> hover on user's i icon)
 
 `USER_ID=replace-with-your-personal-id CLIENT=eyeo PASSWORD=replace-with-your-personal-password npm run $ xtm.create`
 * creates a new project in XTM, project name will be same as branch name
@@ -80,4 +92,22 @@ const subjectMatterId = 1058;
 `USER_ID=replace-with-your-personal-id CLIENT=eyeo PASSWORD=replace-with-your-personal-password npm run $ xtm.details`
 * updates project manager and subject matter ID's
 
+2. **Making changes to files:**
 
+Only make changes to `en-US` translation file, as that is the default locale. I usually just add some random words to strings, for example the first message in en-US/common.json:
+
+"add": {
+    "description": "This is the label for the 'Add' buttons.",
+    "message": "Add"
+  },
+
+  I change to:
+
+ "add": {
+    "description": "This is the label for the 'Add' buttons.",
+    "message": "Changed this message to test XTM"
+  },
+
+You can of course do as many changes as you want, you can even add new files, add new messages to .json, etc, depending on what you're testing of course.
+
+Don't forget to add and commit the changes before running any xtm commands
