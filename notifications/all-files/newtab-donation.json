@@ -9,7 +9,7 @@
       "message": {
         "en-US": "AdblockplusDonate202004"
       },
-      "severity": "newtab",
+      "type": "newtab",
       "title": {
         "en-US": "AdblockplusDonate202004"
       }

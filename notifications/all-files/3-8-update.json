@@ -8,7 +8,7 @@
       "message": {
         "en-US": "No action is required—continue browsing the web without annoying ads! <a>See what's new</a>"
       },
-      "severity": "information",
+      "type": "information",
       "targets": [
         {
           "extension": "adblockpluschrome",
