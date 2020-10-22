@@ -1,14 +1,14 @@
 # FRP
 
-
 ### Trigger FRP on every reload
+
 In `background.js` in `detectFirstRun` fn, comment out everything and set `firstRun = true`
 
 ### Timeout
 
 `timeout = setTimeout(onTimeout, 3000)`
 
-Change to a lower number to trigger timeout and get local FRP. 
+Change to a lower number to trigger timeout and get local FRP.
 
 **note!** on virtual envs connection can be so horribly slow, that the number should be bumped up to around ~8000, otherwise it always timesout
 
@@ -27,27 +27,26 @@ defaults.remote_first_run_page_url = "https://welcome.adblockplus.org/%LANG%/ins
 // defaults.remote_first_run_page_url = "http://httpbin.org/delay/10"
 ```
 
-# Uninstall /FRP params
+# Uninstall / FRP params
 
 https://issues.adblockplus.org/ticket/7153
 
-| name        | abbreviation           |
-| ------------- |:-------------:|
-| addonName	| an |
-| addonVersion | av |
-| application | ap |
-| applicationVersion | apv |
-| platform | p |
-| platformVersion | pv |
-| notificationDownloadCount | ndc |
-| corrupted | c |
+| name                      | abbreviation |
+| ------------------------- | :----------: |
+| addonName                 |      an      |
+| addonVersion              |      av      |
+| application               |      ap      |
+| applicationVersion        |     apv      |
+| platform                  |      p       |
+| platformVersion           |      pv      |
+| notificationDownloadCount |     ndc      |
+| corrupted                 |      c       |
 
 for example: `lang=en-US&an=adblockpluschrome&av=3.8&ap=chrome&apv=80.0.3987.87&p=chromium&fv=20200225&pv=80.0.3987.87&ndc=2&c=0&s=3`
 
 # Data corruption
 
 In `background.js` after `let dataCorrupted = false`, paste `setDataCorrupted(true)`
-
 
 # MISC
 
