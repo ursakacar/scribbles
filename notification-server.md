@@ -17,8 +17,11 @@ You only have to set up all of the painful stuff above once. Then everytime ther
 cd to infrastructure folder
 
 `vagrant up filter1`
+
 `vagrant provision filter1`
+
 `vagrant ssh filter1`
+
 `cd /opt/notifications`
 
 If you want to watch logs, run: `sudo tail -f /var/log/nginx/*`
@@ -39,12 +42,18 @@ cd to notifications folder
 
 `sudo -u nginx hg pull`
 
-Then you can curl https://notification.local/notification.json like a madwoman by running the script: https://github.com/ursakacar/scripts-and-scraps/blob/master/notification-distribution/notification-distribution.sh
+Then you can curl https://notification.local/notification.json like a madwoman by running this script:
 
-Here for simple copy-paste purposes: `curl -k --insecure --progress-bar "https://notification.local/notification.json"`
+https://github.com/ursakacar/scripts-and-scraps/blob/master/notification-distribution/notification-distribution.sh
+
+Here for simple copy-paste purposes:
+
+`curl -k --insecure --progress-bar "https://notification.local/notification.json"`
 
 ### Testing on browsers
 
-Again, follow the instruction for [testing notifications](notifications.md). The url will therefore be: `defaults.notificationurl = "https://notification.local/notification.json";`
+Again, follow the instruction for [testing notifications](notifications.md). The url will therefore be:
+
+`defaults.notificationurl = "https://notification.local/notification.json";`
 
 **!IMPORTANT!** Make sure to allow exceptions for insecure connection to notification.local in all browsers when testing the notification, as notification.local does not have a cert!
