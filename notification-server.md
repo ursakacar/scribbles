@@ -50,6 +50,10 @@ Here for simple copy-paste purposes:
 
 `curl -k --insecure --progress-bar "https://notification.local/notification.json"`
 
+When you're done, stop the server with:
+
+`vagrant halt filter1`
+
 ### Testing on browsers
 
 Again, follow the instruction for [testing notifications](notifications.md). The url will therefore be:
