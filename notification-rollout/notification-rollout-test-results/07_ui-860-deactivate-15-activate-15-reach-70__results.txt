@@ -1,0 +1,35 @@
+
+PATCH:  07_ui-860-deactivate-15-activate-15-reach-70__results.txt
+all requests: 5126
+number of notifications: 2126
+notification distribution: .70
+_____________
+
+number of requests for version: 1 with pattern 8/1" : 35
+set version distribution: 0.01
+actual distribution: .0116
+
+number of requests for version: 2 with pattern 8/2" : 408
+set version distribution: 0.14
+actual distribution: .1360
+
+number of requests for version: 3 with pattern 8/3" : 431
+set version distribution: 0.15
+actual distribution: .1436
+
+number of requests for version: 4 with pattern 8/4" : 603
+set version distribution: 0.20
+actual distribution: .2010
+
+number of requests for version: 5 with pattern 8/5" : 610
+set version distribution: 0.20
+actual distribution: .2033
+
+number of requests for version: 6 with pattern 8/6" : 460
+set version distribution: 0.15
+actual distribution: .1533
+
+number of requests for version: 7 with pattern 8/7" : 453
+set version distribution: 0.15
+actual distribution: .1510
+

@@ -1,0 +1,20 @@
+# HG changeset patch
+# User Adilson Sandoval <adilsonsdev@gmail.com>
+# Date 1603453389 -19800
+#      Fri Oct 23 17:13:09 2020 +0530
+# Node ID 4a57f296ad64d539c66eb9af87d5c577d7997303
+# Parent  0fda0953af533f308a9d61872b36c2cd877d5392
+Issue ui#860 - Activate 15% of users to reach 30%
+
+diff -r 0fda0953af53 -r 4a57f296ad64 8
+--- a/8	Fri Oct 23 17:11:26 2020 +0530
++++ b/8	Fri Oct 23 17:13:09 2020 +0530
+@@ -20,6 +20,8 @@
+ 
+ [3]
+ sample = 0.15
++title.en-US = AdblockplusDonate202010
++message.en-US = AdblockplusDonate202010
+ 
+ [4]
+ sample = 0.20

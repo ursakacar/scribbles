@@ -1,0 +1,26 @@
+# HG changeset patch
+# User Adilson Sandoval <adilsonsdev@gmail.com>
+# Date 1603453894 -19800
+#      Fri Oct 23 17:21:34 2020 +0530
+# Node ID 5c66e5373d20b7c0ad105e5a657c281018a06b56
+# Parent  30468239d066df33b3fcf04fc3ba8d1a52d8fc54
+Issue ui#860 - Deactivate 15% and activate 15% of users to reach 70%
+
+diff -r 30468239d066 -r 5c66e5373d20 8
+--- a/8	Fri Oct 23 17:20:15 2020 +0530
++++ b/8	Fri Oct 23 17:21:34 2020 +0530
+@@ -16,8 +16,6 @@
+ 
+ [3]
+ sample = 0.15
+-title.en-US = AdblockplusDonate202010
+-message.en-US = AdblockplusDonate202010
+ 
+ [4]
+ sample = 0.20
+@@ -36,3 +34,5 @@
+ 
+ [7]
+ sample = 0.15
++title.en-US = AdblockplusDonate202010
++message.en-US = AdblockplusDonate202010

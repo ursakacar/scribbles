@@ -1,0 +1,35 @@
+
+PATCH:  04_ui-860-activate-20-reach-50__results.txt
+all requests: 10545
+number of notifications: 3545
+notification distribution: .50
+_____________
+
+number of requests for version: 1 with pattern 8/1" : 85
+set version distribution: 0.01
+actual distribution: .0121
+
+number of requests for version: 2 with pattern 8/2" : 968
+set version distribution: 0.14
+actual distribution: .1382
+
+number of requests for version: 3 with pattern 8/3" : 1089
+set version distribution: 0.15
+actual distribution: .1555
+
+number of requests for version: 4 with pattern 8/4" : 1403
+set version distribution: 0.20
+actual distribution: .2004
+
+number of requests for version: 5 with pattern 8/5" : 1418
+set version distribution: 0.20
+actual distribution: .2025
+
+number of requests for version: 6 with pattern 8/6" : 1024
+set version distribution: 0.15
+actual distribution: .1462
+
+number of requests for version: 7 with pattern 8/7" : 1013
+set version distribution: 0.15
+actual distribution: .1447
+

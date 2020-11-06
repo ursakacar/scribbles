@@ -1,0 +1,35 @@
+
+PATCH:  11_ui-860-deactivate-15-reach-0__results.txt
+all requests: 3000
+number of notifications: 0
+notification distribution: 0
+_____________
+
+number of requests for version: 1 with pattern 8/1" : 0
+set version distribution: 0.01
+actual distribution: 0
+
+number of requests for version: 2 with pattern 8/2" : 0
+set version distribution: 0.14
+actual distribution: 0
+
+number of requests for version: 3 with pattern 8/3" : 0
+set version distribution: 0.15
+actual distribution: 0
+
+number of requests for version: 4 with pattern 8/4" : 0
+set version distribution: 0.20
+actual distribution: 0
+
+number of requests for version: 5 with pattern 8/5" : 0
+set version distribution: 0.20
+actual distribution: 0
+
+number of requests for version: 6 with pattern 8/6" : 0
+set version distribution: 0.15
+actual distribution: 0
+
+number of requests for version: 7 with pattern 8/7" : 0
+set version distribution: 0.15
+actual distribution: 0
+
