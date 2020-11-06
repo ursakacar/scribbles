@@ -2,27 +2,28 @@
 
 Basic instructions on how to push and serve notifications can be found in [notification server](../notification-server.md), but those are a bit more detailed instructions on how to test the rollout release from start to finish.
 
-### Prereq:
+## Prereq
 
 1. The [notification server](../notification-server.md) has to be set up.
-1. Download and upzip the [mercurial patches(/hg-patches), they should be provided by the developer, here the patches for Q4 2020 are linked as an example
+1. Download and upzip the [mercurial patches](./hg-patches), they should be provided by the developer, here the patches for Q4 2020 are linked as an example
 1. Save [notification-distribution.sh](https://github.com/ursakacar/scripts-and-scraps/blob/master/notification-distribution/notification-distribution.sh) script locally and make it executable with `chmod +x <script-name></script-name>`
 
-### Testing plan
+## Get ready to roll(out)
 
-#### Set up a local folder for notifications
+### Set up a local folder for notifications
 
 1. create a new folder locally
 1. move the uzipped mercurial patches into the folder
-1. cd into the folder, created in the first step, and clone the notification repo: `hg clone ssh://wspee@hg.code.sf.net/p/notifications1/code` (you'll need a password)
+1. open terminal and cd into the folder, created in the first step
+1. clone the notification repo: `hg clone ssh://wspee@hg.code.sf.net/p/notifications1/code` (you'll need a password)
 
-#### Start the filter server:
+### Start the filter server:
 
 1. cd into the `infrastructure` folder and fire up the filter server: `vagrant up filter1`
 1. ssh into the server: `vagrant ssh filter1`
 1. cd into the notifications folder `cd /opt/notifications`
 
-#### Setup the script:
+### Setup the script:
 
 There are some variables that can be adjusted before running the script:
 
@@ -36,24 +37,25 @@ There are some variables that can be adjusted before running the script:
 
 `setDists` the set distribution of notification groups
 
-The script makes an ungodly amount of requests, extracts notification version of each request and calculates what % of all requests fall into which version. It also counts the % of non-empty notifications, so we can check if it matches to our expectations. Example of the results can be seen in [notification-rollout-test-results](/notification-rollout-test-results)
+**That's cool, but what does it do?** The script makes a bunch of requests, extracts notification version of each request and calculates what % of all requests fall into which version. It also calculates the % of non-empty notifications, so we can check if it matches with our expectations. Example of the results can be seen in [notification-rollout-test-results](./notification-rollout-test-results).
 
-#### Start the rollout
+### Start the rollout
 
-#### What are we even doing?
+### What are we even doing?
 
 So, this is what we have to do: locally apply the first patch and push it to the notification repository. Then ssh to filter1, cd into the notification folder and pull the changes that we just pushed to the notification repository. Then we should run the script (make adjustments to if if needed), and after all that is done, repeat the same steps with second patch, then third patch, and so on until we've dealt with all patches.
 
 Always have 3 terminal windows opened- one with the ssh session to the filter1, another one in the local notification folder and the third one for running the script.
 
-#### Let's apply the workflow above:
+### Let's apply the workflow above:
 
 1. in the local notifications folder, run `hg import <path-to-patch>.patch` and then `hg push`
 1. on the filter server in the notifications folder, run `sudo -u nginx hg pull`
 1. in the third window, run the script `./notification-distribution.sh`
 1. after the script finishes, edit the `resultsFile` variable in the script, to prevent results being overwritten in the next run
 1. **repeat** the above steps for all patches
+1. read through result files to see if the numbers add up
 
-#### You're done!
+### You're done!
 
 Stop the filter server: `vagrant halt filter1` and you're all done!
