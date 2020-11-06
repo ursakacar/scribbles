@@ -33,7 +33,7 @@ There are some variables that can be adjusted before running the script:
 
 `sourceFile` the file where the script will be saving notification versions and nonempty notifications, should be left as is
 
-`resultsFile` the file in which the script will output the result of each run, should be changes with each run
+`resultsFile` the file in which the script will output the result of each run, should be changes with each run, I use the same name as the patch file
 
 `setDists` the set distribution of notification groups
 
@@ -41,13 +41,13 @@ There are some variables that can be adjusted before running the script:
 
 ### Start the rollout
 
-### What are we even doing?
+#### What are we even doing?
 
 So, this is what we have to do: locally apply the first patch and push it to the notification repository. Then ssh to filter1, cd into the notification folder and pull the changes that we just pushed to the notification repository. Then we should run the script (make adjustments to if if needed), and after all that is done, repeat the same steps with second patch, then third patch, and so on until we've dealt with all patches.
 
 Always have 3 terminal windows opened- one with the ssh session to the filter1, another one in the local notification folder and the third one for running the script.
 
-### Let's apply the workflow above:
+#### Let's apply the workflow above:
 
 1. in the local notifications folder, run `hg import <path-to-patch>.patch` and then `hg push`
 1. on the filter server in the notifications folder, run `sudo -u nginx hg pull`
