@@ -19,7 +19,7 @@ Basic instructions on how to push and serve notifications can be found in [notif
 
 ### Start the filter server:
 
-1. cd into the `infrastructure` folder and fire up the filter server: `vagrant up filter1`
+1. cd into the `infrastructure` folder and fire up the filter server: `vagrant up filter1` and then `vagrant provision filter1`
 1. ssh into the server: `vagrant ssh filter1`
 1. cd into the notifications folder `cd /opt/notifications`
 
