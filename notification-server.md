@@ -6,6 +6,8 @@ Follow instructions here: https://gitlab.com/eyeo/adblockplus/abpui/adblockplusu
 
 && good luck!
 
+Do not forget to add the line: `10.8.0.120 notification.local` to your `/etc/hosts` (on linux, `/private/etc/hosts` on mac) file.
+
 ## Notification repo
 
 https://sourceforge.net/p/notifications1/code/ci/default/tree/
