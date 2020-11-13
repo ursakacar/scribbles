@@ -1,19 +1,19 @@
 # Generic stuff that I've googled one too many times
 
-##### Switching
+### Switching
 
 `alt + tab` is for between apps, `alt + backtick` is for between windows
 
-##### TMUX
+### TMUX
 
 `alt + a` then either `UDLR` for moving between panels or `h` or `v` to open a new panel. `exit` to close the panel
 
-##### Killing a naughty process
+### Killing a naughty process
 
 - `sudo netstat -lpn | grep :8000`
 - `sudo kill -9 PID`
 
-##### Start+
+### Start+
 
 - `space` change keyboard layour
 - `ctrl + D` hide windows
@@ -23,7 +23,7 @@
 - `A` applications
 - `LR or #` split view
 
-##### scp on vagrant
+### scp on vagrant
 
 `vagrant plugin install vagrant-vbguest`
 `vagrant plugin install vagrant-scp`
