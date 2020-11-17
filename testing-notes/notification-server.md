@@ -10,16 +10,15 @@ Do not forget to add the line: `10.8.0.120 notification.local` to your `/etc/hos
 
 ### Extra steps for mac users
 
-Mac uses the .local top level domain for Bonjour/Rendezvous. As a result, looking up `notification.local` will result in mDNS lookup before `/etc/hosts`, which can take up to 5 seconds (per request!)
-
-To make requests fast again, cd to `/etc/resolver/` directory and create a file: `touch notification.local`. Edit the file to cointain:
+One more line will need to be added to `/etc/hosts/`:
 
 ```
-nameserver 10.8.0.120
-port 53
+0:0:0:0:0:ffff:a08:78  notification.local
 ```
 
-Run `lookupd -flushcache`
+Make sure the file contains two `notification.local` entries, onw with IPv4 and one with IPv6.
+
+Tool for IP conversions: https://www.ultratools.com/tools/ipv4toipv6Result?address=10.8.0.120
 
 ## Notification repo
 
