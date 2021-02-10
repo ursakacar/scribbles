@@ -8,7 +8,7 @@ const restaurant = {
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  
+
   openingHours: {
     thu: {
       open: 12,
@@ -33,7 +33,7 @@ const restaurant = {
 
   orderPasta: function (ingredient1, ingredient2, ingredient3) {
     console.log(`Ordered pasta with ingredients ${ingredient1}, ${ingredient2}, ${ingredient3}`)
-  }, 
+  },
 
   orderPizza: function (mainIngredient, ...otherIngredients) {
     console.log(`Ordered pizza with main ingredient ${mainIngredient}, and ${otherIngredients}`)
@@ -89,6 +89,7 @@ const obj = { a:23, b:7, c:14 }
 const { fri } = openingHours
 const { fri: { open: o, close: c } } = openingHours // desctructure and rename the nested object
 
+
 restaurant.orderDelivery({ // we pass ONE object into the method (not 4 arguments!!!), so we can destructure it in the method
   time: '22:20',
   address: 'some addres 12',
@@ -96,6 +97,9 @@ restaurant.orderDelivery({ // we pass ONE object into the method (not 4 argument
   starterIndex: 2,
 })
 
+orderDelivery: function({starterIndex, mainIndex, time, address}) { //here we desctructure the object from above.
+  console.log(`Order received`)
+}
 
 /********************************/
 /* topic: SPREAD OPERATOR  ...  */
@@ -116,11 +120,11 @@ const newMenu = [...restaurant.mainMenu, 'Gnocci'] // creates a completely new a
 const mainMenuCopy = [...restaurant.mainMenu] // shallow copy of the array
 
 // join arrays
-const menu = [...restaurant.mainMenu, ...restaurant.sterterMenu]
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu]
 
 console.log(`${...arr} text`) // will not work, multiple values separated by a comma are expected when we build a new array or pass args into a function, not in cases like this (template literal)
 
-// ecercise
+// exercise
 const ingredients = [prompt("input the first ingredient for pasta"), prompt("input the second ingredient for pasta"), prompt("input the third ingredient for pasta")] //array of 3 ingredients
 
 restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]) // old way, before we knew about the spread operator
@@ -156,18 +160,22 @@ const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.
 const { sat, ...weekdays} = retaurant.openingHours // weekdays now only contains fri and thu
 
 // in functions
-const add = function(...numbers) { // REST ARGUMENTS, take an array of arbitrary length and unpacks it
+const add = function(...numbers) { // REST ARGUMENTS/parameters, take an array of arbitrary length and unpacks it
   let sum = 0
-  for (i=0; i<numbers.length; i++) sum +=numbers[i]
+  for ( i = 0; i < numbers.length; i++) sum += numbers[i]
 }
 add(2, 3)
 add(3, 5, 1, 5)
-add(4, 6, 7, 0, 9, 3) 
+add(4, 6, 7, 0, 9, 3)
 
 const x = [23, 4, 12]
 add(...x)
 
 restaurant.orderPizza('mushroom', 'onion', 'olives', 'cheese') // result of rest arguments, mushroom will be stored in the main ingredient, everything else into an array
+
+// !!!!!!! SPREAD VS. REST  !!!!!
+// SPREAD: values, separated by a comma
+// REST: variable names, separated by a comma
 
 /**************************************/
 /* topic: SHORT CIRCUITING (&& and ||) */
@@ -368,11 +376,11 @@ restaurant.clear // deletes all from maps??
 const time = 21
 restaurant.get(time > restaurant.get('open') && time < restaurant.get('close')) // this will map to one of the true/false value in the map!
 
-// this will not work, as it does not refer to the same item in the heap 
+// this will not work, as it does not refer to the same item in the heap
 restaurant.set([1, 2], 'Test')
 restaurant.get([1, 2])
 
-// this will work 
+// this will work
 const arr = [1, 2]
 restaurant.set(arr, 'Test')
 restaurant.get(arr)
@@ -384,7 +392,7 @@ const hoursMap = new Map(Object.entries(openingHours)
 
 // another way of creating a map
 const question = new Map([
-    ['question', 'What color is the sky?'], 
+    ['question', 'What color is the sky?'],
     [1, 'blue'],
     [2, 'red'],
     [3, 'yellow'],
@@ -393,7 +401,7 @@ const question = new Map([
     [false, 'Try again!'],
 ])
 
-// iterating maps is possible as maps are iterables 
+// iterating maps is possible as maps are iterables
 console.log(question.get('question'))
 for (const[key, value] of question) {
     if(typeof key === 'number') console.log(`Answer number ${key} is ${value}`)

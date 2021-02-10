@@ -1,3 +1,19 @@
+```
+git@gitlab.com:eyeo/adblockplus/abpui/adblockplusui.git
+cd adblockplusui
+git checkout release-2020-1
+git submodule update --init
+cd adblockpluschrome
+npm install
+npx gulp devenv -t chrome
+```
+
+...or `npx gulp build -t chrome -c development`
+
+### Deprecated
+
+Before abpchrome was moved to the abpui repository (before release 3.11) the building process was the following:
+
 Not written by me, but by Adilson Sandoval, copied from https://gitlab.com/-/snippets/2058604, but saving it here so I have all the notes in one place.
 
 My recommendation is to have origin git remote pointing to webext, so let's fetch all the repos from them:
