@@ -62,7 +62,7 @@ Error: No error, just warning
 
 Correct: `example.com#$#foo`
 
-Error: No active domain specified for snippet filter 
+Error: No active domain specified for snippet filter
 
 #### unexpected_filter_list_header
 
@@ -78,7 +78,6 @@ Correct: `$script`, `$subdocument`, etc.
 
 Error: Unknown filter option
 
-
 ### Copy paste for testing
 
 Error filters:
@@ -92,6 +91,9 @@ test.com$abc
 ||testpages.adblockplus.org^$csp=report-uri 'test'
 /[/
 ||s.ip-cdn.com/js/jq.js$rewrite=abp-resource:blank-js,domain=example.com
+$domain
+$foo
+exa
 ```
 
 Headers and duplicate filters should be ignored, new lines stripped
