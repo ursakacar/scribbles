@@ -56,6 +56,12 @@ The setup that works well for me is to have 3 terminal windows opened- one with 
 1. **repeat** the above steps for all patches
 1. read through result files to see if the numbers add up
 
+**deleting hg files** If you ever find yourself in need to delete a file from Mercurial:
+
+1. `hg remove` <file>
+1. `hg commit` (write a commit message and exit the editor)
+1. `hg push`
+
 ### You're done!
 
 Stop the filter server: `vagrant halt filter1` and you're all done!
