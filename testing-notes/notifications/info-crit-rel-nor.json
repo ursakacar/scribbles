@@ -2,11 +2,8 @@
   "notifications": [
     {
       "id": "1",
-      "type": "normal",
-      "links": [
-        "faq",
-        "contribute"
-      ],
+      "type": "information",
+      "links": ["faq", "contribute"],
       "title": {
         "en-US": "Test Notification",
         "de": "DE LOCALE Test Notification"

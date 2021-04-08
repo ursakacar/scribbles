@@ -43,13 +43,13 @@ There are some variables that can be adjusted before running the script:
 
 #### What are we even doing?
 
-So, this is what we have to do: locally apply the first patch and push it to the notification repository. Then ssh to filter1, cd into the notification folder and pull the changes that we just pushed to the notification repository. Then we should run the script (make adjustments to if if needed), and after all that is done, repeat the same steps with second patch, then third patch, and so on until we've dealt with all patches.
+So, this is what we have to do: Locally apply the first patch and push it to the notification repository. Then ssh to filter1, cd into the notification folder and pull the changes that we just pushed to the notification repository. Then we should run the script (make adjustments to if if needed), and after all that is done, repeat the same steps with second patch, then third patch, and so on until we've dealt with all patches.
 
 The setup that works well for me is to have 3 terminal windows opened- one with the ssh session to the filter1, another one in the local notification folder for applyting patches, and the third one for running the script.
 
 #### Let's apply the workflow above:
 
-1. in the local notifications folder, run `hg import path-to-patch.patch` and then `hg push`
+1. in the local notifications folder, run `hg pull`, then `hg import path-to-patch.patch` and then `hg push`
 1. on the filter server in the notifications folder, run `sudo -u nginx hg pull`
 1. in the third window, run the script `./notification-distribution.sh`
 1. after the script finishes, edit the `resultsFile` variable in the script, to prevent results being overwritten in the next run
