@@ -11,13 +11,13 @@ https://adblockplus.org/development-builds/suppressing-the-first-run-page-on-chr
 
 ### What is even?
 
-This is a simple way to set up managed settings in Chrome, which enable us to disable the first run page, and opening of any other pages that are triggered by the extension (such as `updates.html`), as well as defining pre-installed subscriptions that can not be removed by the user.
+A simple way to set up managed settings in Chrome, which enable us to disable the first run page, any other pages that are triggered by the extension (such as `updates.html`). We can also define pre-installed subscriptions that can not be removed by the user.
 
 For that, two parameters are used: `additional_subscriptions` and `suppress_first_run_page`
 
 ### Linux instructions for supressing FRP
 
-The chrome policies are located in the `/etc/opt/chrome/policies/managed/` folder. If the folder already exists, navigate to it, if it does not, then create it.
+Chrome policies are located in the `/etc/opt/chrome/policies/managed/` folder. If the folder already exists, navigate to it, if it does not, then create it.
 
 For example, if `chrome` folder is not presend in the `/etc/opt`, then:
 
@@ -44,11 +44,13 @@ Once in the `managed` folder, create a new file `abp.json` with command `sudo to
 }
 ```
 
-**@IMPORTANT!** The ID in the example (`cfhdojbkjhnklbpkdaibdccddilifddb`) is the ID of the latest extension release. In case you are testing with a development build, make sure to change that ID.
+**IMPORTANT!** The ID in the example (`cfhdojbkjhnklbpkdaibdccddilifddb`) is the ID of the latest ABP extension release. In case you are testing with a development build, make sure to change that ID accordingly.
 
-Then open [chrome://policy/](chrome://policy/) and click **Reload policies** button. Check if the `suppress_first_run_page` policy name with vaue `true` shows up under the Adblock Plus entry.
+Then open `chrome://policy/` and click **Reload policies** button. Check that the `suppress_first_run_page` policy name with vaue `true` is shown under the Adblock Plus entry.
 
-If yes, you're done! Now if you install the ABP extension with the ID that is specified in that .json file, the first run page will not be opened.
+You're done! Now if you install the ABP extension with the ID that is specified in that .json file, the first run page will not be opened.
+
+If the policy is not updated, triple check that the path of the .json and the extension ID are correct.
 
 ### Mac instructions for supressing FRP
 
