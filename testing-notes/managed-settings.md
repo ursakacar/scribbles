@@ -1,21 +1,18 @@
 # Managed settings
 
-### Some useful links
+### A useful link
 
 https://adblockplus.org/development-builds/suppressing-the-first-run-page-on-chrome
 
-#### Chrome extension policies
-
-* Linux: https://support.google.com/chrome/a/answer/7517525?hl=en#zippy=%2Cset-installation-policies-automatically-install-force-install-allow-or-block
-* Mac: https://support.google.com/chrome/a/answer/7517624?hl=en&ref_topic=9023246
-
-### What is even?
+### Background
 
 A simple way to set up managed settings in Chrome, which enable us to disable the first run page, any other pages that are triggered by the extension (such as `updates.html`). We can also define pre-installed subscriptions that can not be removed by the user.
 
 For that, two parameters are used: `additional_subscriptions` and `suppress_first_run_page`
 
 ### Linux instructions for supressing FRP
+
+Link: https://support.google.com/chrome/a/answer/7517525?
 
 Chrome policies are located in the `/etc/opt/chrome/policies/managed/` folder. If the folder already exists, navigate to it, if it does not, then create it.
 
@@ -54,7 +51,12 @@ If the policy is not updated, triple check that the path of the .json and the ex
 
 ### Mac instructions for supressing FRP
 
-TBD
+TBD (if needed)
+
+Potentionally relevant links:
+https://support.google.com/chrome/a/answer/7517624?hl=en&ref_topic=9023246
+https://support.google.com/chrome/a/answer/9020077?hl=en
+
 
 ```
 <key>ExtensionSettings</key>
