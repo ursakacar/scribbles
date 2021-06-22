@@ -41,6 +41,29 @@ Once in the `managed` folder, create a new file `abp.json` with command `sudo to
 }
 ```
 
+**Example for AdBlock with a bit more settings added, not all params are supported in ABP**
+
+```
+{
+  "3rdparty": {
+    "extensions": {
+      "gighmmpiobklfepjocnamgkkbiglidom": {
+        "suppress_first_run_page": true,
+        "suppress_premium_cta" : true,
+        "suppress_surveys": true,
+        "suppress_update_page": true,
+        "additional_subscriptions": [
+          "https://fanboy.co.nz/fanboy-annoyance.txt"
+        ],
+        "remove_subscriptions": [
+          "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+        ]
+      }
+    }
+  }
+}
+```
+
 **IMPORTANT!** The ID in the example (`cfhdojbkjhnklbpkdaibdccddilifddb`) is the ID of the latest ABP extension release. In case you are testing with a development build, make sure to change that ID accordingly.
 
 Then open `chrome://policy/` and click **Reload policies** button. Check that the `suppress_first_run_page` policy name with vaue `true` is shown under the Adblock Plus entry.
