@@ -8,6 +8,12 @@
 
 `alt + a` then either `UDLR` for moving between panels or `h` or `v` to open a new panel. `exit` to close the panel
 
+### Bash'n surf
+
+Deleting directories by regex
+
+`find -name 'report*' -exec rm -rf {} \;`
+
 ### Killing a naughty process
 
 - `sudo netstat -lpn | grep :8000`
