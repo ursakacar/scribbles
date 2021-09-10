@@ -24,6 +24,10 @@ Tool for IP conversions: https://www.ultratools.com/tools/ipv4toipv6Result?addre
 
 https://sourceforge.net/p/notifications1/code/ci/default/tree/
 
+Clone it with:
+
+`hg clone ssh://wspee@hg.code.sf.net/p/notifications1/code`
+
 ## Testing
 
 You only have to set up all of the painful stuff above once. Then everytime there is a notification with a rolled release to be tested:
@@ -74,4 +78,4 @@ Again, follow the instruction for [testing notifications](notifications.md). The
 
 `defaults.notificationurl = "https://notification.local/notification.json";`
 
-**!IMPORTANT!** Make sure to allow exceptions for insecure connection to notification.local in all browsers when testing the notification, as notification.local does not have a cert!
+**! IMPORTANT !** Make sure to allow exceptions for insecure connection to notification.local in all browsers when testing the notification, as notification.local does not have a cert!
